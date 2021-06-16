@@ -1,0 +1,414 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+	<style>
+		.ui.card>.image>img, .ui.cards>.card>.image>img {
+			object-fit: cover;
+		}
+	</style>
+
+</head>
+<body>
+
+<aside class="sidebar" id="sidebar">
+	<div class="ui vertical menu sidebar-menu" style="margin-top: 60px;">
+		<li class="">
+			<a href="./index.html" class="item">
+				<img src="./icons/dashboard.svg" alt="">
+				<span>Dashboard</span>
+		  </a>
+		</li>
+		<li class="">
+			<a href="./service.html" class="item ">
+				<img src="./icons/services.svg" alt="">
+				<span>Services</span>
+		  </a>
+		</li>
+		<li>
+			<a href="./domain.html" class="item active">
+				<img src="./icons/domains.svg" alt="">
+				<span>Domains</span>
+		</a>
+		</li>
+		<li class="active">
+			<a href="./bling.html" class="item active">
+				<img src="./icons/billing.svg" alt="">
+				<span>Billing</span>
+		</a>
+		</li>
+	 <li>
+		<a href="./support.html" class="item active">
+			<img src="./icons/support.svg" alt="">
+			<span>Support</span>
+	</a>
+	 </li>
+	
+		
+	
+		    	
+		    	
+		
+	</div>
+
+</aside>
+
+
+<main class="main-content bg-gray">
+
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+		  <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+				<li class="drop nav-item">
+					<a href="#" class="nav-link  dropdown-toggle">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#28a745" class="bi bi-person-fill" viewBox="0 0 16 16">
+							<path  d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+						  </svg>
+						  My Support Pin: <span style="color: var(--theme-color);">***72</span>
+					</a>
+					<ul class="drop-menu">
+					  <li><a href="#">Art</a></li>
+					  <li><a href="">Coding</a></li>
+					  <li><a href="">Design</a></li>
+					  <li><a href="">Web Development</a></li>
+					</ul>
+				  </li>
+			</ul>
+			<ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+				
+				  <li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="#">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#28a745" class="bi bi-cart" viewBox="0 0 16 16">
+							<path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+						  </svg></a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="#">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#28a745" class="bi bi-bell" viewBox="0 0 16 16">
+							<path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+						  </svg></a>
+				  </li>
+				<li class="nav-item">
+				  <a class="nav-link" aria-current="page" href="#">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#28a745" class="bi bi-chat-left-dots" viewBox="0 0 16 16">
+						<path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+						<path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+					  </svg> Live Chat</a>
+				</li>
+				<li class="drop nav-item">
+					<a href="#" class="nav-link  dropdown-toggle">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--theme-color)" class="bi bi-person-fill" viewBox="0 0 16 16">
+							<path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+						  </svg>
+						  Mustafa Mohammed Ali
+					</a>
+					<ul class="drop-menu">
+                        <li class="dropdown-header">
+                            <div class="dropdown-header-title">
+                            Mustafa Mohammed Ali
+                            </div>
+                            <div class="dropdown-header-desc">
+                            ironaidfoundation@hotmail.com
+                            </div>
+                            </li>
+                            
+					  <li><a href="#">Art</a></li>
+					  <li><a href="">Coding</a></li>
+					  <li><a href="">Design</a></li>
+					  <li><a href="">Web Development</a></li>
+                      
+					</ul>
+				  </li>
+			
+			  </ul>
+		  </div>
+		</div>
+	  </nav>
+
+<section class="spacer service">
+	<div class="padding-box">
+
+      
+      <div class="service-top-header">
+          <div>
+            <h2 class="d-blue second-heading">
+                my invoices
+              </h2>
+              <div class="custom-breadcrumb">
+                <ul>
+                    <li><a href="#">portal home</a></li>/
+                    <li><a class="active" href="#"> my invoices</a></li>
+                </ul>
+            </div>
+          </div>
+      
+      
+         <div>
+            <div class="custom-add-order">
+                <div class="search-group">
+                   <input type="text" id="table-search" class="form-control" placeholder="Enter search text">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg>
+                  </div>
+
+            </div>
+            <p class="custom-para">your invoice history with us</p>
+          </div>
+      </div>
+          
+      <div class="domain-content">
+          <div class="domain-content-link">
+              <div class="invoic-notification">
+                <div class="tile panel-first" href="/clientarea.php?action=addcontact">
+                    <div class="panel-content">
+                        <p class="light-para">
+                            You have 1 invoices(s) currently unpaid with a tatal balance of
+                        </p>
+                        <div class="bling-amount">
+                            <div>
+                                <h1>$395.86</h1>
+                            </div>
+                            <div>
+                                <img src="./img/exclamation-mark-in-a-circle.png" alt="">
+                            </div>
+                            
+                        </div>
+                    
+                        </div>
+                </div>
+              </div>
+            
+              <h4 class="small-header">billing</h4>
+              <div>
+                  <li class="active-invoice"><a href="#"><span><img src="./img/document.png" alt=""></span><span>my in voices</span></a></li>
+                  <li><a href="./quote.html"><span><img src="./img/chat.png" alt=""></span><span>my quotes</span></a></li>
+                  <li><a href="./payment.html"><span></span><img src="./img/credit-card.png" alt=""><span>mayment method</span></a></li>
+                  
+              </div>
+          </div>
+          
+          <div class="domain-card">
+            <div class="card add-shadow">
+                <div class="card-header custom-card-header">
+                   <div class="lable-header">
+                    view
+                   </div>
+                    
+                    <div>
+                      <select class="custom-select">
+                        <option>all entries</option>
+                        <option>pending</option>
+                     
+                    </select>
+                    </div>
+                      
+                </div>
+                <div class="card-body custom-card-body">
+                    <div class="custom-row">
+                        <div class="row">
+                            <div class="col-md-4 custom-row-content ">
+                               <div class="d-flex">
+                                   
+                                <div class="">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            invoice #
+
+                                        </label>
+                                      </div>
+
+                                </div> 
+                                <div class="arros">
+                                      <div class="arro-up">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+                                          <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+                                        </svg>
+                                      </div>
+                                        <div class="arro-down">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                          </svg>
+                                        </div>
+                                </div>
+                               </div>
+                            </div>
+                            <div class="col-md-2 d-flex custom-row-content ">
+                                
+                                <div>
+                                  invoice date
+                                </div>
+                                <div class="arros">
+                                  <div class="arro-up">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+                                      <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+                                    </svg>
+                                  </div>
+                                    <div class="arro-down">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                      </svg>
+                                    </div>
+                            </div>
+                            </div>
+                            <div class="col-md-2 d-flex custom-row-content ">
+                            
+                                <div>
+                                  due date
+                                </div>
+                                <div class="arros">
+                                  <div class="arro-up">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+                                      <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+                                    </svg>
+                                  </div>
+                                    <div class="arro-down">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                      </svg>
+                                    </div>
+                            </div>
+                            </div>
+                            <div class="col-md-2 d-flex custom-row-content ">
+                                <div>
+                                  total
+                                </div>
+                                <div class="arros">
+                                  <div class="arro-up">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+                                      <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+                                    </svg>
+                                  </div>
+                                    <div class="arro-down">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                      </svg>
+                                    </div>
+                            </div>
+                            </div>
+                            <div class="col-md-2 d-flex custom-row-content ">
+                                <div>
+                                  status
+                                </div>
+                                <div class="arros">
+                                  <div class="arro-up">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+                                      <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+                                    </svg>
+                                  </div>
+                                    <div class="arro-down">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                      </svg>
+                                    </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-row">
+                        <div class="row">
+                            <div class="col-md-4 custom-row-content ">
+                                <div class="product-service-name dark-para">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                          1000249
+                                        </label>
+                                      </div>
+                                </div>
+                                
+                            </div>
+                            <div class="col-md-2 custom-row-content ">
+                                <div class="dark-para pricing-name">
+                                    4th jun 2021
+                                </div>
+                                
+                            </div>
+                            <div class="col-md-2 custom-row-content ">
+                                <div class="dark-para">9th jun 2021 </div>
+                            </div>
+                            <div class="col-md-2 custom-row-content ">
+                                <div class="service-para">
+                                  $395.86
+                                </div>
+                            </div>
+                            <div class="col-md-2 doted-dropdown">
+                             <span class="red-warning">
+                                 <img src="./img/attention (1).png" alt="">
+                             </span>
+                             <span>Unpaid</span>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="card-header custom-card-header footer-custom-row">
+                        <div>
+                            <label class="lable-header" for="">show</label>
+                    
+                            <div class="dropdown open">
+                                <button class="btn btn-secondary dropdown-toggle" type="button"  data-bs-toggle="dropdown" aria-expanded="false">
+                                  all
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" href="#">all entries</a></li>
+                                  <li><a class="dropdown-item" href="#">pending</a></li>
+                                </ul>
+                              </div>
+                              <label class="lable-header" for="">entries</label>
+                        </div>
+                        <div>
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                  <li class="page-item number"><a class="page-link  " href="#">1</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                </ul>
+                              </nav>
+                        </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+      </div>
+      
+      
+	</div>
+    
+		
+</section>
+
+
+
+
+
+</main>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script> -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+<!-- <script src="js/jquery.sliderPro.min.js"></script> -->
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
+
