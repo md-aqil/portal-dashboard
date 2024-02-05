@@ -130,77 +130,8 @@
 		<h2 class="d-blue">
 			My Dashboard
 		  </h2>
-		  <br>
-		  
-		  <div class="tile-row">
-			  
-			<div class="tile panel-first" href="/clientarea.php?action=addcontact">
-				<div class="panel-content">
-					<div class="panel-title">
-					#63897
-					</div>
-					<ul class="panel-details-list">
-					<li>Mustafa Mohammed Ali</li>
-					<li>158 City Road</li>
-					<li>London EC1V 2NX</li>
-					</ul>
-				
-					<button class="btn btn-outline-secondary"> Update Details</button>
-					</div>
-			</div>
-			
-			
-				<a class="tile" href="/clientarea.php?action=addcontact">
-					<span class="tile-container">
-					<span class="tile-content">
-					<div class="icon"><i class="lm lm-users"></i></div>
-					<div class="stat text-theme">0</div>
-					<div class="title">Contacts</div>
-					</span>
-					<span class="tile-action">
-					<button class="btn btn-outline-secondary">Add new contact</button>
-					</span>
-					</span>
-					</a>
-				<a class="tile" href="/clientarea.php?action=addcontact">
-					<span class="tile-container">
-					<span class="tile-content">
-					<div class="icon"><i class="lm lm-users"></i></div>
-					<div class="stat" style="color:#FFAC00">0</div>
-					<div class="title" >Domains</div>
-					</span>
-					<span class="tile-action">
-					<button class="btn btn-outline-secondary">View All</button>
-					</span>
-					</span>
-					</a>
-					<a class="tile" href="/clientarea.php?action=addcontact">
-						<span class="tile-container">
-						<span class="tile-content">
-						<div class="icon"><i class="lm lm-users"></i></div>
-						<div class="stat " style="color:#C80063">1</div>
-						<div class="title">Unpaid Invoice</div>
-						</span>
-						<span class="tile-action">
-						<button class="btn btn-outline-secondary">Pay All</button>
-						</span>
-						</span>
-						</a>
-						<a class="tile" href="/clientarea.php?action=addcontact">
-							<span class="tile-container">
-							<span class="tile-content">
-							<div class="icon"><i class="lm lm-users"></i></div>
-							<div class="stat" style="color:#00C0CA">2</div>
-							<div class="title">Open Ticket</div>
-							</span>
-							<span class="tile-action">
-							<button class="btn btn-outline-secondary">View All</button>
-							</span>
-							</span>
-							</a>
-		  </div>
-		  
-	
+		  <div id="imageGallery"></div>
+
 	</div>
 </section>
 <section class="spacer">
@@ -296,6 +227,40 @@
 <!-- <script src="js/jquery.sliderPro.min.js"></script> -->
 <script src="js/script.js"></script>
 
+
+<script>
+	function loadImages() {
+		const galleryContainer = document.getElementById("imageGallery");
+		const folderPath = "/allmockups";
+
+		// Fetch the list of files in the folder
+		fetch(folderPath)
+			.then(response => response.text())
+			.then(html => {
+				const tempDiv = document.createElement("div");
+				tempDiv.innerHTML = html;
+
+				// Extract only image file names from the folder
+				const imageFileNames = Array.from(tempDiv.querySelectorAll("a"))
+					.map(a => a.getAttribute("href"))
+					.filter(href => /\.(jpe?g|png|gif)$/i.test(href));
+
+				// Load each image file and append it to the gallery container
+				imageFileNames.forEach(fileName => {
+					const imgElement = document.createElement("img");
+
+					// Ensure the correct path
+					imgElement.src = folderPath + fileName;
+
+					// Append image to the gallery container
+					galleryContainer.appendChild(imgElement);
+				});
+			})
+			.catch(error => console.error("Error loading images:", error));
+	}
+
+	window.onload = loadImages;
+</script>
 </body>
 </html>
 
